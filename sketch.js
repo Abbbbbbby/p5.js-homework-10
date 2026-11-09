@@ -1,6 +1,6 @@
 //custom variable
-let altColor = true
-let posX = 0
+let altColor = true;
+let posX = 0;
 
 function setup() {
   createCanvas(600, 400);
