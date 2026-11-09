@@ -42,6 +42,9 @@ function draw() {
   if (posX > width + 100) {
     posX = -100;
   }
+
+  drawRedGuy(mouseX, mouseY)
+
 }
 
 function drawFlower(x, y) {
@@ -78,8 +81,19 @@ function drawBug(x, y) {
 
   // face
   push();
-  translate(x + 37, y)
+  translate(x + 37, y);
   rotate(90);
   text(':3', 0, 0);
+  pop();
+}
+
+function drawRedGuy(x, y) {
+  fill('red');
+  circle(x, y, 50);
+  push();
+  fill(255);
+  translate(x, y);
+  rotate(90);
+  text(': ^ )', 0, 0);
   pop();
 }
